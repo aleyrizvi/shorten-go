@@ -4,7 +4,7 @@ Shorten helps you easily convert long urls to short ones with multiple service p
 
 
 ## Install
-`go get -u github.com/go-shorten/shorten`
+`go get -u github.com/aleyrizvi/shorten-go`
 
 ## Example usage
 
@@ -15,8 +15,8 @@ import (
 	"fmt"
 	"os"
 
-	bitly "github.com/go-shorten/bit.ly"
-	"github.com/go-shorten/shorten"
+	bitly "github.com/aleyrizvi/bit.ly"
+	"github.com/aleyrizvi/shorten-go"
 )
 
 func main() {
@@ -26,7 +26,7 @@ func main() {
 	sh.AddProvider("bitly", btly)
 
 	url, err := sh.Shorten(&shorten.UrlParams{
-		Destination: "https://github.com/go-shorten/shorten",
+		Destination: "github.com/aleyrizvi/shorten-go",
 	})
 
 	if err != nil {
@@ -88,7 +88,7 @@ Currently we are supporting bit.ly at the moment but other providers will be ava
 
 Following is the list of providers in pipeline. Feel free to create a pull request if you like to contribute or reach out if your required provider is not in list.
 
-- [X] [bit.ly](https://bit.ly)
+- [X] [bit.ly](https://github.com/aleyrizvi/bit.ly)
 - [ ] [linkb.ee](https://linkb.ee/)
 - [ ] [rebrandly](https://www.rebrandly.com/)
 - [ ] [short.io](https://short.io)

@@ -1,3 +1,3 @@
-module github.com/go-shorten/shorten
+module github.com/aleyrizvi/shorten-go
 
-go 1.19
+go 1.20
